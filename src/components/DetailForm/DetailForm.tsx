@@ -91,6 +91,7 @@ function DetailForm(props: detailFormProps) {
         className={classes.textfield}
         id="outlined-basic"
         label="Name"
+        name="enteredName"
         variant="outlined"
         value={userDetails.enteredName}
         onChange={onChangeHandler}
@@ -103,6 +104,7 @@ function DetailForm(props: detailFormProps) {
         id="outlined-basic"
         label="Age"
         variant="outlined"
+        name="enteredAge"
         value={userDetails.enteredAge}
         onChange={onChangeHandler}
       />
@@ -114,7 +116,7 @@ function DetailForm(props: detailFormProps) {
           className={classes.buttonSubmit}
           variant="contained"
         >
-          Add me !
+          Update Me!
         </Button>
       ) : (
         <Button
@@ -122,31 +124,9 @@ function DetailForm(props: detailFormProps) {
           className={classes.buttonSubmit}
           variant="contained"
         >
-          Add me !
+          Add me!
         </Button>
       )}
-      {/*<input*/}
-      {/*  type="text"*/}
-      {/*  name="enteredName"*/}
-      {/*  onChange={onChangeHandler}*/}
-      {/*  value={userDetails.enteredName}*/}
-      {/*/>*/}
-
-      {/*<br />*/}
-      {/*<label htmlFor="name">Age : </label>*/}
-      {/*<input*/}
-      {/*  type="text"*/}
-      {/*  name="enteredAge"*/}
-      {/*  onChange={onChangeHandler}*/}
-      {/*  value={userDetails.enteredAge}*/}
-      {/*/>*/}
-      {/*<br />*/}
-
-      {/*{props.currentData && props.currentData.edit ? (*/}
-      {/*  <button type="submit">Update Me!</button>*/}
-      {/*) : (*/}
-      {/*  <button type="submit">Add Me!</button>*/}
-      {/*)}*/}
     </form>
   );
 }
